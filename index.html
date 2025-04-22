@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+        <title>Password Generator</title> 
+
+
+        <link rel="icon" href="favicon.png" type="image/png">
+    
+    
+</head>
+<body> 
+    <div class="container">
+       <div class="header">
+        <h1>Password Generator</h1>
+        <br>
+      
+        <br>
+        <br> <br>
+    </div>
+    
+        <div class="inner">
+            <br>
+
+        <h3> <label for="length" >Password Length:</label> </h3>
+        <input type="number" id="length" value="12" min="1" max="100" style=" width: 80px;
+    height: 70px;">
+        <label for="uppercase">Include Uppercase Letters</label>
+        <input type="checkbox" id="uppercase" >
+        <br>
+        <label for="lowercase">Include Lowercase Letters</label>
+        <input type="checkbox" id="lowercase" >
+        <br>
+        <label for="numbers">Include Numbers</label>
+        <input type="checkbox" id="numbers" >
+        <br>
+        <label for="symbols">Include Symbols</label>
+        <input type="checkbox" id="symbols">
+        <br>
+        <div style="display: flex; align-items: center; gap: 13px;">
+
+
+        <textarea type="text" id="password" placeholder="Your password will appear here.." readonly> </textarea>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+             class="bi bi-copy" viewBox="0 0 16 16" id="CO" style="cursor: pointer;">
+          <path fill-rule="evenodd"
+                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+        </svg>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16" style="cursor: pointer;" onclick="generatePassword()" >
+            <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+          </svg>
+
+        </div>
+
+        <br>
+
+        <script>
+            document.getElementById("CO").addEventListener("click", function() {
+    var passwordField = document.getElementById("password");
+
+    if (passwordField.value === "") {
+        alert("Empty field can't copy");
+        return; 
+    }
+
+    // Use the Clipboard API hai
+    navigator.clipboard.writeText(passwordField.value)
+        .then(() => {
+            alert("Password copied to clipboard!");
+        })
+        .catch((error) => {
+            console.error("Error copying text: ", error);
+            alert("Failed to copy password");
+        });
+}); 
+
+        </script>
+      
+         <button onclick="generatePassword()" style="cursor: pointer; height:50px; width:80px; border-radius: 5px;">Generate Password</button>
+        
+    </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by <a href="https://www.linkedin.com/in/himanshu-talwani-492241237/" target="_blank">Himanshu Talwani</a></p>
+        <p>Github: <a href="https://github.com/Himanshu-talwani" target="_blank">Himanshu-talwani</a></p>
+        <p>Follow me on <a href="https://www.instagram.com/avi_8.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">instagram</a></p>
+</body>
+</html>
