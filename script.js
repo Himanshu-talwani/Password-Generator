@@ -20,9 +20,7 @@
 //             console.error("Error copying text: ", error);
 //             alert("Failed to copy password");
 //         });
-// }); 
-
-
+// });
 // Function to generate a random password based on user selections
 
 function generatePassword() {
