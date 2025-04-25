@@ -137,4 +137,51 @@ textarea#password {
     align-items: center;
     flex-direction: column;
   }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .inner {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  label {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  textarea#password {
+    height: 80px;
+    font-size: 0.9rem;
+  }
+
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  p, .footer {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
  
