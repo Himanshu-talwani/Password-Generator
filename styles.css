@@ -186,9 +186,7 @@ textarea#password {
 
 
 
-/* medias */
-
-
+/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .container {
         padding: 15px;
@@ -231,18 +229,17 @@ textarea#password {
     }
 }
 
-@media (max-width: 768px) {
+/* Specific for smaller devices, iPhones (up to iPhone 12, 14, and Pro Max) */
+@media (max-width: 430px) {
     .container {
-        width: 100%;
-        height: auto;
         padding: 10px;
-        margin: 10px;
+        margin: 5px;
     }
 
     .inner {
         width: 90%;
         height: auto;
-        padding: 10px;
+        padding: 5px;
     }
 
     h1 {
@@ -251,13 +248,13 @@ textarea#password {
     }
 
     label {
+        font-size: 0.95rem;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 1rem;
     }
 
     textarea#password {
-        height: 80px;
+        height: 70px;
         font-size: 0.9rem;
     }
 
@@ -267,7 +264,7 @@ textarea#password {
     }
 
     button {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 8px 12px;
     }
 
@@ -277,7 +274,8 @@ textarea#password {
     }
 }
 
-@media (max-width: 480px) {
+/* Even smaller devices like iPhone SE and below (up to 375px) */
+@media (max-width: 375px) {
     .container {
         padding: 10px;
         margin: 5px;
@@ -290,19 +288,19 @@ textarea#password {
     }
 
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
     label {
+        font-size: 0.9rem;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 0.9rem;
     }
 
     textarea#password {
-        height: 70px;
-        font-size: 0.8rem;
+        height: 60px;
+        font-size: 0.85rem;
     }
 
     input[type="checkbox"] {
@@ -311,8 +309,8 @@ textarea#password {
     }
 
     button {
-        font-size: 0.8rem;
-        padding: 8px 10px;
+        font-size: 0.75rem;
+        padding: 6px 10px;
     }
 
     p, .footer {
@@ -320,5 +318,3 @@ textarea#password {
         text-align: center;
     }
 }
-
- 
