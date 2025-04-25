@@ -184,4 +184,141 @@ textarea#password {
 }
 
 
+
+
+/* medias */
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .inner {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    textarea#password {
+        height: 60px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+    }
+
+    p, .footer {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .inner {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+
+    textarea#password {
+        height: 80px;
+        font-size: 0.9rem;
+    }
+
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    p, .footer {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .inner {
+        width: 95%;
+        height: auto;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    textarea#password {
+        height: 70px;
+        font-size: 0.8rem;
+    }
+
+    input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    p, .footer {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
  
